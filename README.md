@@ -93,13 +93,6 @@ flowchart TD
 
 ---
 
-## 🔑 Authentication
-
-- Uses [Convex Auth](https://auth.convex.dev/) with Anonymous auth for easy sign in.
-- You can customize authentication in `convex/auth.ts` and `convex/auth.config.ts`.
-
----
-
 ## 🏁 Getting Started
 
 1. **Install dependencies:**
