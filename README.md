@@ -5,7 +5,6 @@
 ![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-ML-orange?logo=tensorflow)
 ![React](https://img.shields.io/badge/React-UI-61DAFB?logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-styling-38B2AC?logo=tailwindcss)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
@@ -17,7 +16,6 @@ This web app lets you classify images using AI directly in your browser! Built w
 
 ## ✨ Features
 
-- 🔒 **Authentication:** Anonymous sign-in via Convex Auth
 - 🖼️ **Image Upload:** Drag & drop or file picker
 - 🤖 **AI Classification:** Fast, in-browser predictions with MobileNet
 - 📝 **History:** View your last classifications with images, model, time, and top predictions
