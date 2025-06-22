@@ -1,7 +1,7 @@
 # Image Classification App with TensorFlow.js
 
 ![Vite](https://img.shields.io/badge/Vite-frontend-blue?logo=vite)
-![Convex](https://img.shields.io/badge/Convex-backend-purple?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRjZGNkY2IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHoiLz48L3N2Zz4=)
+![Convex](https://img.shields.io/badge/Convex-backend-purple?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRjZGNkY2IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy02LjYyIDAtMTItNS4zOC0xMi0xMnM1LjM4LTEyIDEyLTEyIDEyIDUuMzggMTIgMTItNS4zOCAxMi0xMiAxMnoiLz48L3N2Zz4=)
 ![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-ML-orange?logo=tensorflow)
 ![React](https://img.shields.io/badge/React-UI-61DAFB?logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-styling-38B2AC?logo=tailwindcss)
@@ -11,32 +11,30 @@
 
 ## 🚀 Overview
 
-This web app lets you classify images using AI directly in your browser! Built with React, TensorFlow.js (MobileNet), and Convex for a seamless, full-stack experience. Upload an image, get instant predictions, and view your classification history—all with modern authentication and a beautiful UI.
-
-- **Live Convex deployment:** [`cautious-opossum-87`](https://dashboard.convex.dev/d/cautious-opossum-87)
+This web app lets you classify images using AI directly in your browser! Built with React, TensorFlow.js (MobileNet), and Convex for a seamless, full-stack experience. Upload an image, get instant in-browser predictions, and view your recent classification history.
 
 ---
 
 ## ✨ Features
 
-- 🔒 **Authentication:** Anonymous sign-in via Convex Auth (easy to customize)
+- 🔒 **Authentication:** Anonymous sign-in via Convex Auth
 - 🖼️ **Image Upload:** Drag & drop or file picker
-- 🤖 **AI Classification:** Fast, in-browser predictions with MobileNet (1000+ classes)
-- 📝 **History:** View your last 20 classifications with images, model, time, and top predictions
+- 🤖 **AI Classification:** Fast, in-browser predictions with MobileNet
+- 📝 **History:** View your last classifications with images, model, time, and top predictions
 - ☁️ **Cloud Storage:** Images and results stored in Convex
-- 📊 **Progress Bars & Skeletons:** Smooth UX with loading states
+- 📊 **Loading Skeletons:** Smooth UX with loading states
 - 📱 **Responsive UI:** Built with Tailwind CSS
 
 ---
 
 ## 🗂️ Project Structure
 
-| Path         | Description                |
-|--------------|----------------------------|
-| `src/`       | Frontend (React, TS, UI)   |
-| `convex/`    | Backend (Convex functions) |
-| `public/`    | Static assets (classes)    |
-| `package.json` | Scripts & dependencies   |
+| Path           | Description                  |
+| -------------- | --------------------------- |
+| `src/`         | Frontend (React, TS, UI)    |
+| `convex/`      | Backend (Convex functions)  |
+| `public/`      | Static assets (classes)     |
+| `package.json` | Scripts & dependencies      |
 
 ---
 
@@ -73,30 +71,12 @@ flowchart TD
   C --> I
 ```
 
-### Database Schema
-
-```mermaid
-erDiagram
-  CLASSIFICATIONS {
-    id id PK
-    imageId id
-    modelName string
-    predictions array
-    processingTime number
-  }
-  CLASSIFICATIONS ||--o{ PREDICTION : contains
-  PREDICTION {
-    className string
-    probability number
-  }
-```
-
 ---
 
 ## 🛠️ Technology Stack
 
 | Layer      | Tech/Library                |
-|------------|----------------------------|
+| ---------- | -------------------------- |
 | Frontend   | React, TypeScript, Vite     |
 | Styling    | Tailwind CSS                |
 | ML         | TensorFlow.js, MobileNet    |
@@ -109,9 +89,9 @@ erDiagram
 ## 📦 Main Scripts
 
 | Script         | Description                        |
-|----------------|------------------------------------|
-| `npm run dev`  | Start frontend & backend (dev)      |
-| `npm run lint` | Typecheck & lint all code           |
+| -------------- | ---------------------------------- |
+| `npm run dev`  | Start frontend & backend (dev)     |
+| `npm run lint` | Typecheck & lint all code          |
 
 ---
 
